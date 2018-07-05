@@ -1,0 +1,7 @@
+showroom = set()
+showroom.update({'Toyota Corolla', 'Honda Civic', 'Tesla Model S', 'Maserati GranTurismo'})
+print(len(showroom))
+showroom.add("Toyota Corolla")
+print(showroom)
+showroom.update({'Volkswagen Beetle Convertable', 'Smart ForTwo'})
+showroom.discard('Honda Civic')
