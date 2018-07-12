@@ -1,0 +1,9 @@
+F = Fiesta 
+T = Corolla 
+N = Altima 
+H = Civic 
+V = Bug 
+F = Focus 
+C = Impala 
+T = Prius 
+A = Vantage 
