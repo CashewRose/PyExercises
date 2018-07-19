@@ -1,0 +1,10 @@
+<h1>Songs by {{ artist.artist_name }}:</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+<ul>
+{% for song in artist.song_set.all %}
+    <li>{{ song.song_name }}</li>
+{% endfor %}
+</ul>
+
+<a href="{% url 'history:all_artists' %}">Find someone else?</a>
