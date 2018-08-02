@@ -1,9 +1,12 @@
-{% if artist_list %}
+{% if view.album_artist_stuff.artist_list %}
+<h2>Artists</h2>
     <ul>
-    {% for artist in artist_list %}
-        <li><a href="/history/{{ artist.id }}/">{{ artist.artist_name }}</a></li>
+    {% for artist in view.album_artist_stuff.artist_list %}
+        <li><a href="{{ artist.id }}/">{{ artist.artist_name }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
     <p>No artists are available.</p>
 {% endif %}
+
+{% block content %}{% endblock %}

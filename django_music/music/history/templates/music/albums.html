@@ -1,0 +1,21 @@
+{% extends "music/artists.html" %}
+
+{% block content %}
+
+<h2>Albums</h2>
+
+{% if view.album_artist_stuff.album_list %}
+    <ul>
+    {% for album in view.album_artist_stuff.album_list %}
+        <li><a href="{{ album.id }}/">{{ album.album_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No albums are available.</p>
+{% endif %}
+<form>
+    <h3>Add a New Album</h3>
+    {{ form }}
+    <input type="submit" value="submit">
+</form>
+{% endblock %}
