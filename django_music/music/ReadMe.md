@@ -40,8 +40,16 @@ Remember that every time you create a model, or update it, you need to [create a
 values (null, "The Kinks", 1964)` 
 to insert data into your `Artist` and `Song` tables 
 
-
 # Optional Stretch Goals
+
+Goals for extending the exercise:
+1. Add Album model
+1. Create form for adding an Album to your db
+1. Write a URL conf, view, and template for viewing album data in a list
+1. Use a form model for the form, use class-based view with methods that return the data you want to bind to the template
+1. Rinse and repeat for Genre, and the existing Song and Artist models
+
+# Advanced Stretch Goals
 
 1. Style your templates with CSS by setting up your application to serve static files.
 1. Create a site template for your music history that both the artist list, and the artist detail templates extend.
